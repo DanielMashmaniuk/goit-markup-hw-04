@@ -74,6 +74,13 @@ body {
 }
 
 /* HEADER */
+.icon-envelope,.icon-smartphone{
+  fill:currentColor;
+    margin-right: 10px;
+  }
+  .icon-envelope:hover,.icon-smartphone:hover{
+    fill: currentColor;
+  }
 .header {
   border-bottom: 1px solid var(--header-border-color);
 }
