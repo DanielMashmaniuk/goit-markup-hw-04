@@ -9,6 +9,8 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --header-border-color: rgba(236, 236, 236, 1);
   --portfolio-border-color: rgba(238, 238, 238, 1);
+  --bgr-overlay: rgba(47, 48, 58, 0.4);
+  --items-color:#AFB1B8;
 }
 
 body {
@@ -137,7 +139,16 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--third-background-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--hero-background);
+  background-image: linear-gradient( 
+    to right, var(--bgr-overlay), var(--bgr-overlay) ),
+   url(../images/background-img-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-top: 0;
@@ -178,7 +189,28 @@ body {
   line-height: 1.17;
   color: var(--title-text-color);
 }
+.specifics-list-item::before{content: '';
+  display: block;
+  background-color: var(--buttons-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  margin-bottom: 30px;}
+.specifics-list-item:nth-child(1)::before{
+  background:var(--secondary-background-color) url(../images/antenna.svg) no-repeat center;
+}
 
+.specifics-list-item:nth-child(2)::before{
+  background:var(--secondary-background-color) url(../images/clock.svg) no-repeat center;
+}
+
+.specifics-list-item:nth-child(3)::before{
+  background:var(--secondary-background-color) url(../images/diagram.svg) no-repeat center;
+}
+
+.specifics-list-item:nth-child(4)::before{
+  background:var(--secondary-background-color) url(../images/astronaut.svg) no-repeat center;
+}
 /* Section our specifics */
 
 .specifics-list .description-title {
@@ -216,7 +248,30 @@ body {
 }
 
 /* Section our team */
+.actions{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 30px;
+}
+.icons{width: 44px;
+  height: 44px;
+  padding: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  fill: var(--items-color);
+  background-color: rgba(255, 255, 255, 0.1);}
+.team-list-item{
+  flex-basis: calc(100% / 4 - 30px);
 
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  text-align: center;
+}
 .team-list .description {
   margin-top: 10px;
 }
