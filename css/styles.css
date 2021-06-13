@@ -34,6 +34,7 @@ ul{
 }
 .link {
   text-decoration: none;
+  display: flex;
 }
 .visually-hidden {
   position: absolute;
@@ -111,7 +112,7 @@ ul{
 }
 .site-nav .link,
 .contact-nav .link {
-  display: block;
+ 
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -262,6 +263,11 @@ ul{
 .li-team{
  height: 44px;
 }
+  .icons:hover{
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+
 .icons{width: 44px;
   height: 44px;
   padding: 12px;
@@ -322,11 +328,15 @@ ul{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;}
+    .company-icons:hover,.company-icons:focus{
+          fill: var(--accent-color);
+          border: 1px solid var(--accent-color);    }
 /* FOOTER */
 .footer-section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   background-color: var(--third-background-color);
+  min-height: 138px;
 }
 .companies {
   display: flex;
@@ -344,9 +354,6 @@ ul{
   text-align: center;
   margin-top: 0px;
 color: #000;}
-svg[Attributes Style] {
-  width: 106;
-  height: 60;}
 
 .company-icons {
   display: block;
@@ -371,6 +378,28 @@ svg[Attributes Style] {
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.you-are-welcome {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+  min-width: 206px;
+  margin-left: 70px;}
+  .welcome {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);}
+    .actions.fut {
+      margin: 0;
+      padding: 0;
+      margin-top: 20px;
+  }
+  .column{
+    display: flex;
+  }
 
 /* PORTFOLIO */
 .button-list {
