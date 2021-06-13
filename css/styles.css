@@ -22,7 +22,11 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -255,6 +259,9 @@ body {
   padding-right: 32px;
   margin-bottom: 30px;
 }
+.li-team{
+ height: 44px;
+}
 .icons{width: 44px;
   height: 44px;
   padding: 12px;
@@ -308,13 +315,47 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+/*Постоянние клиенти*/
+.container {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;}
 /* FOOTER */
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--third-background-color);
 }
+.companies {
+  display: flex;
+  justify-content: space-between;}
+.section-companies{
+  padding-top: 94px;
+    padding-bottom: 94px;
+    min-width: 1200px;
+}
+.main-site-sections {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 0px;
+color: #000;}
+svg[Attributes Style] {
+  width: 106;
+  height: 60;}
+
+.company-icons {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--items-color);
+  border-radius: 4px;
+  fill: var(--items-color);}
 .address {
   margin-top: 20px;
   font-style: normal;
