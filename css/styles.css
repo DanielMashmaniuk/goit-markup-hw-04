@@ -399,6 +399,7 @@ color: #000;}
   }
   .column{
     display: flex;
+    padding-bottom: 60px;
   }
 
 /* PORTFOLIO */
