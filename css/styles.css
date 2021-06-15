@@ -263,10 +263,10 @@ ul{
 .li-team{
  height: 44px;
 }
-  .icons:hover{
-    fill: var(--primary-white-color);
-    background-color: var(--accent-color);
-  }
+.icons:hover{
+fill: var(--primary-white-color);
+background-color: var(--accent-color);
+}
 
 .icons{width: 44px;
   height: 44px;
@@ -462,3 +462,11 @@ color: #000;}
   margin-right: 30px;
   margin-top: 30px;
 }
+.link-portfolio {
+  text-decoration: none;
+}
+.examples-list-item:hover,.examples-list-item:focus {
+
+  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ 
+ }
