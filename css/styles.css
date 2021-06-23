@@ -12,7 +12,12 @@
   --bgr-overlay: rgba(47, 48, 58, 0.4);
   --items-color:#AFB1B8;
 }
-
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -263,7 +268,8 @@ ul{
 .li-team{
  height: 44px;
 }
-.icons:hover{
+.icons:hover,
+.icons:focus {
 fill: var(--primary-white-color);
 background-color: var(--accent-color);
 }
@@ -338,6 +344,14 @@ background-color: var(--accent-color);
   background-color: var(--third-background-color);
   min-height: 138px;
 }
+.link-footer{color: var(--primary-white-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+    display: flex;
+}
 .companies {
   display: flex;
   justify-content: space-between;}
@@ -401,6 +415,7 @@ color: #000;}
     display: flex;
     padding-bottom: 60px;
   }
+
 
 /* PORTFOLIO */
 .button-list {
